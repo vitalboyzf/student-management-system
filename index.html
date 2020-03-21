@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生管理系统</title>
+    <link rel="icon" href="./assets/index.png">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <img class="logo" src="./assets/index.png" alt="">
+        <span>学生管理系统</span>
+    </header>
+    <div class="main">
+        <div class="left-menu">
+            <dl>
+                <dt>学生管理</dt>
+                <dd class="student-list-btn active" data-id="student-list">学生列表</dd>
+                <dd class="student-add-btn " data-id="student-add">添加学生</dd>
+            </dl>
+        </div>
+        <div class="right-content">
+            <div class="student-list active" id="student-list">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>学号</th>
+                        <th>姓名</th>
+                        <th>性别</th>
+                        <th>邮箱</th>
+                        <th>年龄</th>
+                        <th>手机号</th>
+                        <th>住址</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>张斐</td>
+                        <td>男</td>
+                        <td>1434110591@qq.com</td>
+                        <td>21</td>
+                        <td>15132605692</td>
+                        <td>河北省承德市滦平县</td>
+                        <td>
+                            <span class="btn edit">修改</span>
+                            <span class="btn delete">删除</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="modal">
+                   <!--弹出蒙层-->
+
+                    <form>
+                        <p>编辑表单</p>
+                        <div class="item">
+                            <label for="name">姓名</label>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="item">
+                            <label for="name">性别</label>
+                            <label for="male" class="sex">男</label>
+                            <input type="radio" checked name="sex" id="male">
+                            <label for="female" class="sex">女</label>
+                            <input type="radio" name="sex" id="female">
+                        </div>
+                        <div class="item">
+                            <label for="email">邮箱</label>
+                            <input type="text" id="email">
+                        </div>
+                        <div class="item">
+                            <label for="number">学号</label>
+                            <input type="text" id="number">
+                        </div>
+                        <div class="item">
+                            <label for="birth">出生年月</label>
+                            <input type="text" id="birth">
+                        </div>
+                        <div class="item">
+                            <label for="phone">手机号</label>
+                            <input type="text" id="phone">
+                        </div>
+                        <div class="item">
+                            <label for="address">住址</label>
+                            <input type="text" id="address">
+                        </div>
+                        <div class="item">
+                            <label for=""></label>
+                            <input class="btn" type="submit" value="修改">
+                            <input class="btn" type="reset" value="重置">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="student-add " id="student-add">
+                <form>
+                    <div class="item">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="item">
+                        <label for="name">性别</label>
+                        <label for="male" class="sex">男</label>
+                        <input type="radio" checked name="sex" id="male">
+                        <label for="female" class="sex">女</label>
+                        <input type="radio" name="sex" id="female">
+                    </div>
+                    <div class="item">
+                        <label for="email">邮箱</label>
+                        <input type="text" id="email">
+                    </div>
+                    <div class="item">
+                        <label for="number">学号</label>
+                        <input type="text" id="number">
+                    </div>
+                    <div class="item">
+                        <label for="birth">出生年月</label>
+                        <input type="text" id="birth">
+                    </div>
+                    <div class="item">
+                        <label for="phone">手机号</label>
+                        <input type="text" id="phone">
+                    </div>
+                    <div class="item">
+                        <label for="address">住址</label>
+                        <input type="text" id="address">
+                    </div>
+                    <div class="item">
+                        <label for=""></label>
+                        <input class="btn" type="submit" value="添加">
+                        <input class="btn" type="reset" value="重置">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span class="author">
+        Author：Virtual
+    </span>
+        <span class="date">
+        DATE:2020-3-21
+    </span>
+    </footer>
+</div>
+</body>
+</html>

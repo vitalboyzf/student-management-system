@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body, .container {
+    height: 100%;
+    overflow: hidden;
+}
+
+
+/*页头区域*/
+header {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: #ccc;
+}
+
+header .logo {
+    width: 25px;
+    height: 25px;
+    background-color: #cccccc;
+    vertical-align: middle;
+    margin: 15px 30px;
+}
+
+header span {
+    line-height: 60px;
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+/*中间区域*/
+.main {
+    background-color: #cccccc;
+    height: calc(100% - 120px);
+    width: 100%;
+}
+
+/*中间左区域*/
+.main .left-menu {
+    float: left;
+    width: 200px;
+    height: 100%;
+    background-color: aqua;
+}
+
+.main .left-menu dl {
+    text-shadow: 2px 2px 2px #f98;
+    line-height: 80px;
+    font-size: 28px;
+    font-weight: bolder;
+
+}
+
+.main .left-menu dd {
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.main .left-menu .active {
+    background-color: #cccccc;
+    color: white;
+}
+
+.main .left-menu dd:hover {
+    background-color: rgba(255, 255, 255, .7);
+}
+
+/*中间右区域*/
+/*学生列表区域*/
+.student-list {
+    display: none;
+}
+
+.main .right-content {
+    box-sizing: border-box;
+    padding: 25px;
+    float: right;
+    width: calc(100% - 200px);
+    height: 100%;
+    background-color: aliceblue;
+}
+
+.main .right-content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.main .right-content .student-list table tr th {
+    background-color: #ddd;
+}
+
+.main .right-content .student-list table tr, th, td {
+    font-weight: bold;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.main .right-content .student-list table td .btn {
+    padding: 3px 10px;
+    color: #fff;
+    border-radius: 8px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.main .right-content .student-list table td .edit {
+    background-color: green;
+}
+
+.main .right-content .student-list table td .delete {
+    background-color: red;
+}
+
+.student-list.active {
+    display: block;
+}
+
+/*弹框*/
+.modal{
+    display: none;
+}
+.modal {
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.modal form {
+    width: 400px;
+    margin: 200px auto;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.modal form p {
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.modal form .item {
+    margin: 10px 0px;
+}
+
+.modal form .item label:not(.sex) {
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+}
+
+.modal form .item .btn {
+    padding: 5px 22px;
+    color: #cccccc;
+    background-color: #666;
+    font-weight: bolder;
+}
+
+/*添加学生区域*/
+.student-add form {
+    display: none;
+}
+
+.student-add form {
+    width: 400px;
+    margin: 100px auto;
+}
+
+.student-add form .item {
+    margin: 10px 0px;
+}
+
+.student-add form .item label:not(.sex) {
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+}
+
+.student-add form .item .btn {
+    padding: 5px 22px;
+    color: #cccccc;
+    background-color: #666;
+    font-weight: bolder;
+}
+
+.student-add.active form {
+    display: block;
+}
+
+/*页脚区域*/
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+}
+
+footer span {
+    margin-left: 500px;
+    color: orange;
+}
