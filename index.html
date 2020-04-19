@@ -14,14 +14,14 @@
     </header>
     <div class="main">
         <div class="left-menu">
-            <dl>
+            <dl class="student-menu">
                 <dt>学生管理</dt>
-                <dd class="student-list-btn active" data-id="student-list">学生列表</dd>
-                <dd class="student-add-btn " data-id="student-add">添加学生</dd>
+                <dd class="student-list-btn active" for="student-list" data-id="student-list">学生列表</dd>
+                <dd class="student-add-btn" for="student-add" data-id="student-add">添加学生</dd>
             </dl>
         </div>
         <div class="right-content">
-            <div class="student-list active" id="student-list">
+            <div class="student-list content-active" id="student-list">
                 <table>
                     <thead>
                     <tr>
@@ -35,26 +35,14 @@
                         <th>操作</th>
                     </tr>
                     </thead>
-                    <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>张斐</td>
-                        <td>男</td>
-                        <td>1434110591@qq.com</td>
-                        <td>21</td>
-                        <td>15132605692</td>
-                        <td>河北省承德市滦平县</td>
-                        <td>
-                            <span class="btn edit">修改</span>
-                            <span class="btn delete">删除</span>
-                        </td>
-                    </tr>
+                    <tbody id="tbody">
+
                     </tbody>
                 </table>
                 <div class="modal">
-                   <!--弹出蒙层-->
+                    <!--弹出蒙层-->
 
-                    <form>
+                    <form class="modal-form">
                         <p>编辑表单</p>
                         <div class="item">
                             <label for="name">姓名</label>
@@ -62,18 +50,18 @@
                         </div>
                         <div class="item">
                             <label for="name">性别</label>
-                            <label for="male" class="sex">男</label>
-                            <input type="radio" checked name="sex" id="male">
+                            <label for="male" class="sex" >男</label>
+                            <input type="radio" checked name="sex" value="0" id="male">
                             <label for="female" class="sex">女</label>
-                            <input type="radio" name="sex" id="female">
+                            <input type="radio" name="sex" value="1" id="female">
                         </div>
                         <div class="item">
                             <label for="email">邮箱</label>
                             <input type="text" id="email">
                         </div>
                         <div class="item">
-                            <label for="number">学号</label>
-                            <input type="text" id="number">
+                            <label for="sNo">学号</label>
+                            <input type="text" id="sNo">
                         </div>
                         <div class="item">
                             <label for="birth">出生年月</label>
@@ -89,32 +77,31 @@
                         </div>
                         <div class="item">
                             <label for=""></label>
-                            <input class="btn" type="submit" value="修改">
-                            <input class="btn" type="reset" value="重置">
+                            <input id="modal-btn" class="btn" type="submit" value="修改">
                         </div>
                     </form>
                 </div>
             </div>
             <div class="student-add " id="student-add">
-                <form>
+                <form class="add-form">
                     <div class="item">
                         <label for="name">姓名</label>
                         <input type="text" id="name">
                     </div>
                     <div class="item">
                         <label for="name">性别</label>
-                        <label for="male" class="sex">男</label>
-                        <input type="radio" checked name="sex" id="male">
-                        <label for="female" class="sex">女</label>
-                        <input type="radio" name="sex" id="female">
+                        <label for="edit-male" class="sex">男</label>
+                        <input type="radio" checked name="sex" value="0" id="edit-male">
+                        <label for="edit-female" class="sex">女</label>
+                        <input type="radio" name="sex" value="1" id="edit-female">
                     </div>
                     <div class="item">
                         <label for="email">邮箱</label>
                         <input type="text" id="email">
                     </div>
                     <div class="item">
-                        <label for="number">学号</label>
-                        <input type="text" id="number">
+                        <label for="sNo">学号</label>
+                        <input type="text" id="sNo">
                     </div>
                     <div class="item">
                         <label for="birth">出生年月</label>
@@ -130,7 +117,7 @@
                     </div>
                     <div class="item">
                         <label for=""></label>
-                        <input class="btn" type="submit" value="添加">
+                        <input class="btn" id="addStudentBtn" type="submit" value="添加">
                         <input class="btn" type="reset" value="重置">
                     </div>
                 </form>
@@ -148,3 +135,4 @@
 </div>
 </body>
 </html>
+<script src="./index.js"></script>

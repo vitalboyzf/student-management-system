@@ -116,7 +116,7 @@ header span {
     background-color: red;
 }
 
-.student-list.active {
+.student-list.content-active {
     display: block;
 }
 
@@ -165,7 +165,7 @@ header span {
 }
 
 /*添加学生区域*/
-.student-add form {
+.student-add {
     display: none;
 }
 
@@ -191,7 +191,7 @@ header span {
     font-weight: bolder;
 }
 
-.student-add.active form {
+.student-add.content-active  {
     display: block;
 }
 
